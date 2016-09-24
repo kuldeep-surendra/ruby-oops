@@ -1,26 +1,24 @@
 class Animal
 
-	def dog_sound
-		puts "woff=woff"
-	end
-
-	def lion_sound
-		puts "roar"
-	end
-
-	def elephant_sound
-		puts "trumph"
-	end
-
-	def rabbit_sound
-		puts "squeak"
+	def initialize(sound)
+		@sound = sound
 	end
 
 end
 
 class Dog < Animal
-
+	def make_sound
+		puts @sound
+	end
 end
 
-dog = Dog.new
-puts dog.dog_sound
+class Cat < Animal
+	def make_sound
+		puts @sound
+	end
+end
+
+d = Dog.new("woff-woff")
+d.make_sound
+c = Cat.new("meow")
+c.make_sound
