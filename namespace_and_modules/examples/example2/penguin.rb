@@ -8,7 +8,7 @@ module Penguin
 		puts "#{@sound}, Penguin can make sound!"
 	end
 
-	def Penguin.can_fly(fly)
+	def self.can_fly(fly)
 		@fly = fly
 		puts "#{@fly}, Penguin cannot fly!"
 	end
